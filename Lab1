@@ -1,0 +1,10 @@
+Function Raschet(first As Double, second As Double, third As Double) As Double
+final1 = (4 * Sin(35) + Atn(-0.2 / Sqr(-0.2 * 0.2 + 1)) + 2 * Atn(1))
+MsgBox ("Промежуточное первое:" & final1)
+final2 = final1 / ((first - second) * (first - second) + Log(third + 9))
+MsgBox ("Промежуточное второе:" & final2)
+final3 = final2 + Sqr(third) - Sqr(first - second)
+MsgBox ("Промежуточное третье:" & final3)
+Raschet = final3 + 0.29
+MsgBox ("Окончательный ответ:" & final4)
+End Function
